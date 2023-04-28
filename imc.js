@@ -7,19 +7,19 @@ resultado entre 30 e 34,9 - Obesidade grau I ;<br>
 resultado entre 35 e 39,9 - Obesidade garu II (severa);<br>
 resultado acima de 40 - Obesidade grau III (mórbida);<br></br>
 */
-var altura;
-var peso;
+var Altura;
+var Peso;
 var imc;
 var resultado;
 
-function calcular(event){
+function Calcular(event){
 
-    event.preventDefalt();
+    event.preventDefault();
 
-    peso = preventDefalt(document.getElementById("peso").value);
-    altura = preventDefalt(document.getElementById("altura").value);
+    Peso = parseFloat(document.getElementById("Peso").value);
+    Altura = parseFloat(document.getElementById("Altura").value);
 
-    imc = peso / (altura * altura);
+    imc = Peso / (Altura * Altura);
 
     
     resultado = document.getElementById("resultado");
@@ -40,6 +40,6 @@ function calcular(event){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> CUIDADO,obesidade grau III";
     }
 
-    document.getElementById("peso").value = ""
-    document.getElementById("altura").value = ""
+    document.getElementById("Peso").value ="";
+    document.getElementById("Altura").value ="";
 }
