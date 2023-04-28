@@ -26,17 +26,17 @@ function Calcular(event){
 
     if (imc < 17){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Cuidado você está muito abaixo do peso!";
-    } else if (immc >= 17 && imc <= 18.49){
+    } else if (imc >= 17 && imc <= 18.49){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Abaixo do peso!";
-    } else if (immc >= 18.5 && imc <= 24.99){
+    } else if (imc >= 18.5 && imc <= 24.99){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Você está no peso ideal!";
-    } else if (immc >= 25 && imc <= 29.99){
+    } else if (imc >= 25 && imc <= 29.99){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Você está com sobrepeso!";
-    }else if (immc >= 30 && imc <= 34.99){
+    }else if (imc >= 30 && imc <= 34.99){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> CUIDADO, obesidade grau I!";
-    }else if (immc >= 35 && imc <= 39.99){
+    }else if (imc >= 35 && imc <= 39.99){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + ",br/> CUIDADO,obesidade garu II!";
-    }else if (immc >= 40){
+    }else if (imc >= 40){
         resultado.innerHTML ="<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> CUIDADO,obesidade grau III";
     }
 
