@@ -22,7 +22,7 @@ function calcular(event){
     
     resultado = document.getElementById("resultado");
 
-    if (imc < 17);{
+    if (imc < 17){
         resultado.innerHTML = <"<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Cuidado você está muito abaixo do peso!";
     } else if (immc >= 17 && imc <= 18.49){
         resultado.innerHTML = <"<br/> seu resultado foi: " + imc.toFixed(2) + "<br/> Abaixo do peso!";
